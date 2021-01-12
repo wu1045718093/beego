@@ -15,6 +15,7 @@ func (c *LoginController) Get() {
 func (c *LoginController) Post() {
 	email := c.GetString("email")
 	password := c.GetString("password")
+
 	c.Ctx.WriteString("登陆成功" + email + password)
 	c.Ctx.Redirect(302, "\\")
 }
