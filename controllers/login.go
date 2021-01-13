@@ -1,6 +1,8 @@
 package controllers
 
 import (
+	"login/model"
+
 	beego "github.com/beego/beego/v2/server/web"
 )
 
@@ -16,6 +18,10 @@ func (c *LoginController) Post() {
 	email := c.GetString("email")
 	password := c.GetString("password")
 
-	c.Ctx.WriteString("登陆成功" + email + password)
-	c.Ctx.Redirect(302, "\\")
+	ok := model.PrepareQuerry(email, password)
+	if ok == true {
+		c.Ctx.Redirect(302, "/")
+	} else {
+		c.Ctx.WriteString("密码错误")
+	}
 }
