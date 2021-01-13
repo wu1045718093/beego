@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqaE0lM.woff) format('woff');
+  }
+  @font-face {
+	font-family: 'Karla';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/karla/v14/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52aE0lM.woff) format('woff');
+  }
+  

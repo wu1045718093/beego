@@ -35,7 +35,7 @@ func init() {
 
 }
 
-func PrepareQuerry(user_name string, password string) (result bool) {
+func PrepareQuerryLogin(user_name string, password string) (result bool) {
 	var u login_user
 	sqlStr := "select user_id, user_name, password from user where (user_name=? AND password=?)"
 	stmt, err := pool.Prepare(sqlStr)
@@ -54,14 +54,46 @@ func PrepareQuerry(user_name string, password string) (result bool) {
 	return true
 }
 
-func PrepareInsert(user string, password string) {
+func PrepareQuerryRegister(user_name string) (result bool, err error) {
+	var u login_user
+	sqlStr := "select user_id, user_name, password from user where (user_name=?)"
+	stmt, err := pool.Prepare(sqlStr)
+	if err != nil {
+		fmt.Println("Prepare failed, err:%v", err)
+		return false, err
+	}
+	defer stmt.Close()
+
+	err = stmt.QueryRow(user_name).Scan(&u.user_id, &u.user_name, &u.password)
+	if err != nil {
+		fmt.Println("querry failed, err:%v", err)
+		return true, err
+	}
+
+	return false, err
+}
+
+func PrepareInsert(user string, password string) (result int) {
+	ok, err := PrepareQuerryRegister(user)
+	if ok != true {
+		fmt.Println(" user exit, err:%v", err)
+		return -1
+	}
+
 	sqlStr := "Insert into user(user_name, password) values(?,?)"
 	stmt, err := pool.Prepare(sqlStr)
 	if err != nil {
 		fmt.Println("Prepare failed, err:%v", err)
-		return
+		return -2
 	}
+
 	defer stmt.Close()
 
-	stmt.Exec(user, password)
+	_, err = stmt.Exec(user, password)
+	if err != nil {
+		fmt.Println("Insert failed, err:%v", err)
+		return -3
+	}
+
+	return 0
 }
