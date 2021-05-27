@@ -1,22 +1,16 @@
-<mxfile host="app.diagrams.net" modified="2021-05-27T15:55:27.967Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="hiXzg51jAM7BVXMmkRwD" version="14.6.11" type="github">
+<mxfile host="app.diagrams.net" modified="2021-05-27T16:12:38.916Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.212 Safari/537.36" etag="IAnJ6OeE111vtpjnurHG" version="14.6.11" type="github">
   <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
-    <mxGraphModel dx="2591" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+    <mxGraphModel dx="2842" dy="896" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="wCIL7dhoobaamTL4FDUd-41" value="模组" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="170" y="80" width="100" height="610" as="geometry" />
+          <mxGeometry x="170" y="80" width="100" height="870" as="geometry" />
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-48" value="MQTT CONNECT" style="html=1;verticalAlign=bottom;endArrow=block;entryX=-0.1;entryY=0.25;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="wCIL7dhoobaamTL4FDUd-41" target="wCIL7dhoobaamTL4FDUd-56">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="50" y="70" as="sourcePoint" />
             <mxPoint x="130" y="70" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-54" value="AES(ECDHA(Device ECDHA PriKey,Cloude ECDHA PubKey), payload)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="wCIL7dhoobaamTL4FDUd-41" target="wCIL7dhoobaamTL4FDUd-42">
-          <mxGeometry width="80" relative="1" as="geometry">
-            <mxPoint x="50" y="520" as="sourcePoint" />
-            <mxPoint x="130" y="520" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-58" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-41">
@@ -25,13 +19,13 @@
         <mxCell id="wCIL7dhoobaamTL4FDUd-73" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-41">
           <mxGeometry x="45" y="180" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-74" value="&lt;h2&gt;&lt;b&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ECC_make_key&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;(Device P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ubKey, Device P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;riKey)&lt;/span&gt;&lt;/b&gt;&lt;/h2&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="wCIL7dhoobaamTL4FDUd-73" parent="wCIL7dhoobaamTL4FDUd-41">
-          <mxGeometry x="-1" y="-283" relative="1" as="geometry">
+        <mxCell id="wCIL7dhoobaamTL4FDUd-74" value="&lt;h2 style=&quot;text-align: center&quot;&gt;&lt;b style=&quot;font-size: 11px&quot;&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;生成设备端ECDHE公私钥对&lt;/span&gt;&lt;/b&gt;&lt;/h2&gt;&lt;h2&gt;&lt;b style=&quot;font-size: 11px&quot;&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ECC_make_key&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;(Device P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ubKey, Device P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;riKey)&lt;/span&gt;&lt;/b&gt;&lt;br&gt;&lt;/h2&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="wCIL7dhoobaamTL4FDUd-73" parent="wCIL7dhoobaamTL4FDUd-41">
+          <mxGeometry x="-1" y="-301" relative="1" as="geometry">
             <mxPoint x="50" y="160" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="80" y="160" />
             </Array>
-            <mxPoint x="-280" y="-243" as="offset" />
+            <mxPoint x="-300" y="-271" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-75" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-41">
@@ -46,8 +40,17 @@
         <mxCell id="wCIL7dhoobaamTL4FDUd-76" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-41">
           <mxGeometry x="45" y="420" width="10" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-82" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-41">
+          <mxGeometry x="45" y="550" width="10" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-84" value="AES(&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ECC_shared_secret&lt;/span&gt;(Device PriKey,Cloude PubKey), payload)" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="wCIL7dhoobaamTL4FDUd-41" target="wCIL7dhoobaamTL4FDUd-42">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="50" y="570" as="sourcePoint" />
+            <mxPoint x="130" y="570" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-42" value="云" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="910" y="80" width="100" height="613" as="geometry" />
+          <mxGeometry x="910" y="80" width="100" height="870" as="geometry" />
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-56" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-42">
           <mxGeometry x="45" y="50" width="10" height="80" as="geometry" />
@@ -58,17 +61,20 @@
         <mxCell id="wCIL7dhoobaamTL4FDUd-78" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-42">
           <mxGeometry x="45" y="360" width="10" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-79" value="&lt;h2&gt;&lt;b&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;ECC_make_key&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;(Cloude P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;ubKey, Cloude P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;riKey)&lt;/span&gt;&lt;/b&gt;&lt;/h2&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="wCIL7dhoobaamTL4FDUd-78" parent="wCIL7dhoobaamTL4FDUd-42">
-          <mxGeometry x="0.5714" y="30" relative="1" as="geometry">
+        <mxCell id="wCIL7dhoobaamTL4FDUd-79" value="&lt;h2 style=&quot;text-align: center&quot;&gt;&lt;b&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;生成云端ECDHE公私钥对&lt;/span&gt;&lt;/b&gt;&lt;/h2&gt;&lt;h2&gt;&lt;b&gt;&lt;span class=&quot;pl-smi&quot; style=&quot;box-sizing: border-box ; color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;ECC_make_key&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;(Cloude P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;ubKey, Cloude P&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-size: 12px&quot;&gt;riKey)&lt;/span&gt;&lt;/b&gt;&lt;/h2&gt;" style="edgeStyle=orthogonalEdgeStyle;html=1;align=left;spacingLeft=2;endArrow=block;rounded=0;entryX=1;entryY=0;" edge="1" target="wCIL7dhoobaamTL4FDUd-78" parent="wCIL7dhoobaamTL4FDUd-42">
+          <mxGeometry x="0.3846" y="-15" relative="1" as="geometry">
             <mxPoint x="50" y="340" as="sourcePoint" />
             <Array as="points">
               <mxPoint x="75" y="340" />
             </Array>
-            <mxPoint as="offset" />
+            <mxPoint x="15" y="15" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-81" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-42">
-          <mxGeometry x="45" y="450" width="10" height="80" as="geometry" />
+          <mxGeometry x="45" y="430" width="10" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-83" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="wCIL7dhoobaamTL4FDUd-42">
+          <mxGeometry x="45" y="550" width="10" height="320" as="geometry" />
         </mxCell>
         <mxCell id="wCIL7dhoobaamTL4FDUd-49" value="CONNECT ACK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=1;entryY=0.875;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-42" target="wCIL7dhoobaamTL4FDUd-58">
           <mxGeometry x="0.0263" relative="1" as="geometry">
@@ -80,7 +86,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-52" value="&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;ECDSA_sign&lt;/span&gt;（Cloude Auth PriKey，Device&amp;nbsp; PubKey&amp;nbsp;）+&amp;nbsp; Cloude PubKey" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-42" target="wCIL7dhoobaamTL4FDUd-41">
+        <mxCell id="wCIL7dhoobaamTL4FDUd-52" value="&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; font-size: 12px&quot;&gt;云端签名：signed_c = ECDSA_sign(&lt;/span&gt;Cloude Auth PriKey，Device&amp;nbsp; PubKey)&lt;br&gt;Cloude PubKey" style="html=1;verticalAlign=bottom;endArrow=block;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-42" target="wCIL7dhoobaamTL4FDUd-41">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="630" y="380" as="sourcePoint" />
             <mxPoint x="710" y="380" as="targetPoint" />
@@ -89,13 +95,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-55" value="PUBACK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;entryX=1;entryY=0.263;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
-          <mxGeometry relative="1" as="geometry">
-            <mxPoint x="952" y="622.72" as="sourcePoint" />
-            <mxPoint x="217" y="620" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-62" value="Device ECDHA PubKey&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.1;exitY=0.238;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-75">
+        <mxCell id="wCIL7dhoobaamTL4FDUd-62" value="Device PubKey&amp;nbsp;" style="html=1;verticalAlign=bottom;endArrow=block;exitX=1.1;exitY=0.238;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-75">
           <mxGeometry width="80" relative="1" as="geometry">
             <mxPoint x="220" y="340" as="sourcePoint" />
             <mxPoint x="953" y="339" as="targetPoint" />
@@ -106,10 +106,31 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="wCIL7dhoobaamTL4FDUd-80" value="return" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.5;exitY=0.875;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-76" target="wCIL7dhoobaamTL4FDUd-42">
+        <mxCell id="wCIL7dhoobaamTL4FDUd-80" value="PUBACK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.5;exitY=0.875;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-76" target="wCIL7dhoobaamTL4FDUd-42">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="320" y="550" as="sourcePoint" />
             <mxPoint x="240" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-86" value="&lt;div style=&quot;text-align: center&quot;&gt;&lt;span style=&quot;background-color: rgb(255 , 255 , 255) ; color: rgb(36 , 41 , 46)&quot;&gt;签名校验&lt;/span&gt;&lt;/div&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; background-color: rgb(255 , 255 , 255)&quot;&gt;ECDSA_verify&lt;/span&gt;&lt;b style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46)&quot;&gt;(&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;font-size: 11px ; text-align: center ; background-color: rgb(255 , 255 , 255)&quot;&gt;Cloude Auth PubKey,&lt;/span&gt;&lt;b style=&quot;font-family: &amp;#34;helvetica&amp;#34;&quot;&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46)&quot;&gt;signed_c,Device Pub&lt;/span&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46)&quot;&gt;Key)&lt;/span&gt;&lt;/b&gt;&lt;span style=&quot;color: rgb(36 , 41 , 46) ; font-family: , &amp;#34;consolas&amp;#34; , &amp;#34;liberation mono&amp;#34; , &amp;#34;menlo&amp;#34; , monospace ; background-color: rgb(255 , 255 , 255)&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-80" y="500" width="300" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-87" value="PUBACK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;" edge="1" parent="1" target="wCIL7dhoobaamTL4FDUd-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="950" y="690" as="sourcePoint" />
+            <mxPoint x="870" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-88" value="AES(&lt;span style=&quot;font-size: 12px ; color: rgb(36 , 41 , 46)&quot;&gt;ECC_shared_secret&lt;/span&gt;(Cloude PriKey,Device PubKey), payload)" style="html=1;verticalAlign=bottom;endArrow=block;exitX=0.9;exitY=0.628;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-83" target="wCIL7dhoobaamTL4FDUd-41">
+          <mxGeometry width="80" relative="1" as="geometry">
+            <mxPoint x="900" y="790" as="sourcePoint" />
+            <mxPoint x="840" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="wCIL7dhoobaamTL4FDUd-89" value="PUBACK" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;exitX=0.9;exitY=0.813;exitDx=0;exitDy=0;exitPerimeter=0;entryX=-0.1;entryY=0.816;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wCIL7dhoobaamTL4FDUd-82" target="wCIL7dhoobaamTL4FDUd-83">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="890" as="sourcePoint" />
+            <mxPoint x="270" y="890" as="targetPoint" />
           </mxGeometry>
         </mxCell>
       </root>
